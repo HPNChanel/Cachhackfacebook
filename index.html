@@ -95,18 +95,18 @@
         // }
 
         var carouselData = {
-            description: "Cậu gì ơi. <br/>Mình thích cậu từ lâu rồi. <br/>Làm bạn gái mình nhé <3 ",
+            description: "Để xem kết quả thi ngày mai của Quỳnh Anh thế nào nè.  ",
             items: [
-                { color: "rgba(216, 78, 66, 0.8)", content: "Không. <br/>Mình chưa muốn yêu đương", isTroll: false, text: "Cậu ơi! Đợi chút, chưa xong mà "},
-                { color: "rgba(284, 201, 65, 0.8)", content: "Mình phân vân quá", isTroll: false, text: "Phân vân gì nữa. Đồng ý luôn nhá"},
-                { color: "rgba(216, 78, 66, 0.8)", content: "Không. <br/>Mình chưa muốn yêu đương", isTroll: false, text: "Cậu ơi! Đợi chút, chưa xong mà "},
-                { color: "rgba(216, 78, 66, 0.8)", content: "Không. <br/>Mình chưa muốn yêu đương", isTroll: false, text: "Cậu ơi! Đợi chút, chưa xong mà "},
-                { color: "rgba(284, 201, 65, 0.8)", content: "Mình phân vân quá", isTroll: false, text: "Phân vân gì nữa. Đồng ý luôn nhá"},
-                { color: "rgba(216, 78, 66, 0.8)", content: "Không. <br/>Mình chưa muốn yêu đương", isTroll: false, text: "Cậu ơi! Đợi chút, chưa xong mà "},
-                { color: "rgba(216, 78, 66, 0.8)", content: "Không. <br/>Mình chưa muốn yêu đương", isTroll: false, text: "Cậu ơi! Đợi chút, chưa xong mà "},
-                { color: "rgba(284, 201, 65, 0.8)", content: "Mình phân vân quá", isTroll: false, text: "Phân vân gì nữa. Đồng ý luôn nhá"},
-                { color: "rgba(216, 78, 66, 0.8)", content: "Không. <br/>Mình chưa muốn yêu đương", isTroll: false, text: "Cậu ơi! Đợi chút, chưa xong mà "},
-                { color: "rgba(25, 158, 94, 0.8)", content: "Có. Đồng ý luôn", isTroll: true, text: "Cảm ơn cậu. Tối nay bọn mình đi xem phim nha :))"}
+                { color: "rgba(216, 78, 66, 0.8)", content: "Ôi không, kết quả không khả quan rồi", isTroll: false, text: "Quỳnh Anh ơi! Chưa xong mà. Đợi mấy giây nữa nè"},
+                { color: "rgba(284, 201, 65, 0.8)", content: "Hên xui hehe", isTroll: false, text: "Hên xui cái giề. Quay vào ô Siêu Siêu Tốt đê!!!"},
+                { color: "rgba(216, 78, 66, 0.8)", content: "Ôi không, kết quả không khả quan rồi", isTroll: false, text: "Quỳnh Anh ơi! Chưa xong mà. Đợi mấy giây nữa nè "},
+                { color: "rgba(216, 78, 66, 0.8)", content: "Ôi không, kết quả không khả quan rồi", isTroll: false, text: "Quỳnh Anh ơi! Chưa xong mà. Đợi mấy giây nữa nè "},
+                { color: "rgba(284, 201, 65, 0.8)", content: "Hên xui hehe", isTroll: false, text: "Hên xui cái giề. Quay vào ô Siêu Siêu Tốt đê!!!"},
+                { color: "rgba(216, 78, 66, 0.8)", content: "Ôi không, kết quả không khả quan rồi", isTroll: false, text: "Quỳnh Anh ơi! Chưa xong mà. Đợi mấy giây nữa nè "},
+                { color: "rgba(216, 78, 66, 0.8)", content: "Ôi không, kết quả không khả quan rồi", isTroll: false, text: "Quỳnh Anh ơi! Chưa xong mà. Đợi mấy giây nữa nè "},
+                { color: "rgba(284, 201, 65, 0.8)", content: "Hên xui", isTroll: false, text: "Hên xui cái giề. Quay vào ô Siêu Siêu Tốt đê!!!"},
+                { color: "rgba(216, 78, 66, 0.8)", content: "Ôi không, kết quả không khả quan rồi", isTroll: false, text: "QQuỳnh Anh ơi! Chưa xong mà. Đợi mấy giây nữa nè "},
+                { color: "rgba(25, 158, 94, 0.8)", content: "Siêu siêu tốt luôn!!!", isTroll: true, text: "Ôi! Idol tớ giỏi quá đi. Chúc mừng Quỳnh Anh nhé:3"}
             ]
         };
 
@@ -130,7 +130,7 @@
                     if(!items[currentItemIndex].isTroll){
                         let sleepToTroll = setTimeout(function(){
                             this.trollSpin();
-                        }.bind(this), 3000);                        
+                        }.bind(this), 2500);                        
                     }
                     clearTimeout(timeout);
                 }.bind(this) ,10000);
@@ -147,7 +147,7 @@
                     let timeout = setTimeout(function(){
                         this.printText(items[trollItemIndex].text);
                         clearTimeout(timeout);
-                    }.bind(this), 11000);
+                    }.bind(this), 4500);
                 }
 
             },
@@ -185,8 +185,8 @@
                 <div class="result">
                     <button type="button" class="rotate-button" onclick="carousel.randomSpin()">Bắt đầu chọn</button>
                     <div class="text">
-                        Tớ tin vào duyên số của chúng ta. <br/>
-                        Cậu chọn đi nhé <3
+                        Tui tin bồ hoàn thành tốt mà <br/>
+                        Bồ chọn đi nhé <3
                     </div>
                 </div>
                 `;
